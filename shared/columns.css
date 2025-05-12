@@ -1,0 +1,20 @@
+/* YourComponent.css or global styles */
+.scrollable::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .scrollable::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+    
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: #E2E8F0;  /* Tailwind slate-300 */
+    border-radius: 4px;
+  }
+  
+  
