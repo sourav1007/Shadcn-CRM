@@ -136,7 +136,7 @@ const TableHeaderControls = (props) => {
                 </div>
                 <div className="flex justify-end gap-2 mt-4">
                   <DialogClose asChild>
-                    <button type="button" className="px-4 py-2 bg-gray-200 text-green-900 rounded">
+                    <button  className="px-4 py-2 bg-gray-200 text-green-900 rounded">
                       Cancel
                     </button>
                   </DialogClose>
