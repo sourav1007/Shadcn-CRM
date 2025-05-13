@@ -56,7 +56,6 @@ export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([])
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({})
   const [rowSelection, setRowSelection] = React.useState({})
-      const [activeTab, setActiveTab] = React.useState("tab1");
 
 
   const table = useReactTable({

@@ -1,4 +1,4 @@
-import { Menu, Search, Plus, Bell, ChevronDown } from "lucide-react";
+import {  Search, Plus, Bell } from "lucide-react";
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
