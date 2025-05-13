@@ -13,21 +13,19 @@ import {
   useReactTable,
 } from "@tanstack/react-table"
 import {
-  ChevronDown,
+
   ChevronLeft,
   ChevronRight,
-  ListFilter, Columns3Cog,
+   Columns3Cog,
   ChevronsLeft,
   ChevronsRight,
-  PlusCircle,
+  
   GripVertical,
   X,
 } from "lucide-react"
-import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
 
@@ -80,7 +78,6 @@ export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
 
   return (
     <div className="w-full ">
-    <TableHeaderControls title={title} />
      
 
       <div className="flex items-center justify-between mb-4 ">

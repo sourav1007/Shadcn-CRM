@@ -1019,9 +1019,9 @@ const View = () => {
 
     const [activeTab, setActiveTab] = useState("tab1");
     return (
-        <> <TableHeaderControls activeTab={activeTab} setActiveTab={setActiveTab}></TableHeaderControls>
+        <> <TableHeaderControls title="Leads" activeTab={activeTab} setActiveTab={setActiveTab}></TableHeaderControls>
 
-          
+        
 
             <div >
                 {tabs.find((tab) => tab.id === activeTab)?.component}
