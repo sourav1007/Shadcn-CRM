@@ -3,7 +3,6 @@
 import React, { useState } from "react"
 import { DataTableDemo } from "../../../components/DataTableDemo"
 import {
-  ArrowUpDown,
   Pencil,
   Trash,
   MoreHorizontal,
