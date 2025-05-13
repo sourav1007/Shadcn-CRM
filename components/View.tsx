@@ -4,8 +4,7 @@ import { useState } from 'react'
 import TableHeaderControls from './TableHeaderControls'
 import { DataTableDemo } from "./DataTableDemo"
 import KanbanView from "./KanbanView"
-import { ArrowUpDown, ChevronsLeft, Pencil, Copy, Trash, ChevronLeft, ChevronsRight, ChevronDown, MoreHorizontal, ChevronRight, CirclePlus, PlusCircle } from "lucide-react"
-import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
+import { ArrowUpDown, Pencil, Copy, Trash,  MoreHorizontal, } from "lucide-react"
 
 import { Progress } from "@/components/ui/progress"
 
@@ -14,16 +13,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuCheckboxItem,
+  
 
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"

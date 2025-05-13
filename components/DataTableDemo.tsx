@@ -34,16 +34,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Label } from "@/components/ui/label"
-import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuCheckboxItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+
 import {
   Table,
   TableBody,
@@ -61,9 +54,6 @@ type Props<TData> = {
 }
 
 export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
-  const [showStatusBar, setShowStatusBar] = React.useState<DropdownMenuCheckboxItemProps["checked"]>(true)
-  const [showActivityBar, setShowActivityBar] = React.useState<DropdownMenuCheckboxItemProps["checked"]>(false)
-  const [showPanel, setShowPanel] = React.useState<DropdownMenuCheckboxItemProps["checked"]>(false)
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([])
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({})
