@@ -47,7 +47,7 @@ import TableHeaderControls from "./TableHeaderControls"
 
 type Props<TData> = {
   data: TData[]
-  columns: ColumnDef<TData, any>[]
+  columns: ColumnDef<TData>[]
  title:string
 }
 

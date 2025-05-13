@@ -1,4 +1,5 @@
 import {  Search, Plus, Bell } from "lucide-react";
+import Image from "next/image";
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
@@ -50,7 +51,7 @@ export default function RootLayout({ children }) {
                 <Bell size={20} className="text-gray-300 cursor-pointer" />
 
 
-                <img
+                <Image
                   src="https://i.pravatar.cc/32"
                   alt="User"
                   className="w-8 h-8 rounded-full"
