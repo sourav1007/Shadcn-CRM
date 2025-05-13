@@ -766,7 +766,7 @@ import { TBoard } from '@/shared/data'
     {
       id: "actions",
       enableHiding: false,
-      cell: ({ row }) => {
+      cell: ({ }) => {
   
         return (
           <DropdownMenu>
