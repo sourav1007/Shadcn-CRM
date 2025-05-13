@@ -202,7 +202,8 @@ const TableHeaderControls = (props) => {
 
                 <div className="flex justify-end gap-2 mt-6">
                   <DialogClose asChild>
-                    <button type="button" className="px-4 py-2 bg-gray-200 text-green-800 rounded">
+                    <button
+                     className="px-4 py-2 bg-gray-200 text-green-800 rounded">
                       Cancel
                     </button>
                   </DialogClose>
@@ -537,7 +538,7 @@ const TableHeaderControls = (props) => {
                 
                               <div className="flex justify-end gap-2 mt-4 ">
                                 <button
-                                  type="button"
+                                  
                                   onClick={() => setShowModal(true)}
                                   className="px-4 py-2 bg-white border border-green-900 text-green-900 rounded"
                                 >
@@ -548,7 +549,7 @@ const TableHeaderControls = (props) => {
                 
                                 }
                                 <DialogClose asChild>
-                                  <button type="button" className="px-4 py-2 bg-gray-200 text-green-900 rounded">
+                                  <button  className="px-4 py-2 bg-gray-200 text-green-900 rounded">
                                     Cancel
                                   </button>
                                 </DialogClose>
