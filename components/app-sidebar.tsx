@@ -100,7 +100,7 @@ const data = {
     },
     {
       title: "Meetings",
-      url: "#",
+      url: "/meetings",
       icon: Calendar,
      
     },

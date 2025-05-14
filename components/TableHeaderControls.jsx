@@ -69,13 +69,13 @@ const TableHeaderControls = (props) => {
       <div className="flex items-center gap-2.5">
         {props.title === "User" && (
           <Dialog>
-            <DialogTrigger>
-              <button className="px-4 py-2 bg-green-900 text-white rounded flex items-center gap-1">
+            <DialogTrigger asChild>
+              <span className="px-4 py-2 bg-green-900 text-white rounded flex items-center gap-1">
                 <UserPlus size={16} />
                 Add New User
-              </button>
+              </span>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="right-[-13.4%] h-auto">
               <DialogHeader>
                 <DialogTitle>Add New User</DialogTitle>
               </DialogHeader>
@@ -152,10 +152,10 @@ const TableHeaderControls = (props) => {
         {props.title === "Role" && (
           <Dialog>
             <DialogTrigger asChild>
-              <button className="flex items-center gap-1 px-4 py-2 bg-green-900 text-white rounded">
+              <span className="flex items-center gap-1 px-4 py-2 bg-green-900 text-white rounded">
                 <Plus className="w-5 h-5" />
                 Add New Role
-              </button>
+              </span>
             </DialogTrigger>
             <DialogContent className="role-dialog">
               <DialogHeader>
@@ -261,10 +261,10 @@ const TableHeaderControls = (props) => {
                 {/* Add Leads */}
                 <Dialog >
                         <DialogTrigger>
-                          <button className="px-4 py-2 bg-green-900 text-white rounded flex items-center gap-1">
+                          <span className="px-4 py-2 bg-green-900 text-white rounded flex items-center gap-1">
                             <Plus size={16} />
                             Add Lead
-                          </button>
+                          </span>
                         </DialogTrigger>
                         <DialogContent className=" lead">
                           <DialogHeader>

@@ -88,9 +88,9 @@ export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
         <div className="search-bar flex gap-2.5">
           <Input
             placeholder={`Search ${title}`}
-            value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
+            value={(table.getColumn("username")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
-              table.getColumn("email")?.setFilterValue(event.target.value)
+              table.getColumn("username")?.setFilterValue(event.target.value)
             }
             className="w-[290px]"
           />
@@ -101,10 +101,10 @@ export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
           <Dialog>
 
             <DialogTrigger asChild>
-              <button className="flex items-center gap-1 px-4 py-2 bg-gray-200 text-green-900 rounded">
+              <span className="flex items-center gap-1 px-4 py-2 bg-gray-200 text-green-900 rounded">
                 <Columns3Cog className="w-5 h-5" />
                 Manage Column
-              </button>
+              </span>
             </DialogTrigger>
 
             <DialogContent className="manage-col">

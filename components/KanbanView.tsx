@@ -60,7 +60,7 @@ const KanbanView: React.FC<KanbanViewProps> = ({ data }) => {
 
   return (
     <>
-      <div className="flex items-center justify-between flex-wrap mb-4">
+      <div className="flex items-center w-full justify-between flex-wrap mb-4">
         <div className="flex gap-2.5">
           <Input
             placeholder="Search Leads.."

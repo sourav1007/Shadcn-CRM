@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Search, Plus, Bell } from "lucide-react";
-import Image from "next/image";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
@@ -51,7 +52,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Plus size={18} className="text-white" />
                 </button>
                 <Bell size={20} className="text-gray-300 cursor-pointer" />
-                <Image src="/Logo.svg" width={32} height={32} alt="image" />
+                <Avatar>
+                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
               </div>
             </header>
             <div className="p-8">{children}</div>

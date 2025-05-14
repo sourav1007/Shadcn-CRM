@@ -29,6 +29,7 @@ import {
 import { ColumnDef } from "@tanstack/react-table"
 
 export type Headings = {
+  src:string
   username: string
   email: string
   role: string
@@ -37,30 +38,35 @@ export type Headings = {
 
 const initialData: Headings[] = [
   {
+    src:"https://github.com/shadcn.png",
     username: "john_doe",
     email: "john.doe@example.com",
     role: "admin",
     createdDate: "2024-12-01",
   },
-  {
+  {    src:"https://github.com/shadcn.png",
+
     username: "jane_smith",
     email: "jane.smith@example.com",
     role: "editor",
     createdDate: "2025-01-15",
   },
   {
-    username: "rahul_verma",
+    username: "rahul_verma",    src:"https://github.com/shadcn.png",
+
     email: "rahul.verma@example.com",
     role: "viewer",
     createdDate: "2025-03-10",
   },
-  {
+  {    src:"https://github.com/shadcn.png",
+
     username: "anita_kumar",
     email: "anita.kumar@example.com",
     role: "editor",
     createdDate: "2025-04-05",
   },
-  {
+  {    src:"https://github.com/shadcn.png",
+
     username: "mike_ross",
     email: "mike.ross@example.com",
     role: "admin",

@@ -22,7 +22,7 @@ import {
 
 export type Headings = {
     id: string
-    leadsName: string
+    username: string
     vendorName: string
     contactPerson: string
     email: string
@@ -355,7 +355,7 @@ export type Headings = {
         ],
       },
       {
-        id: "column-3",
+        id: "column-4",
         cards: [
           {
             id: "card-21",
@@ -460,7 +460,7 @@ export type Headings = {
         ],
       },
       {
-        id: "column-3",
+        id: "column-5",
         cards: [
           {
             id: "card-21",
@@ -565,7 +565,7 @@ export type Headings = {
         ],
       },
       {
-        id: "column-3",
+        id: "column-6",
         cards: [
           {
             id: "card-21",
@@ -706,9 +706,9 @@ import { TBoard } from '@/shared/data'
       enableHiding: false,
     },
     {
-      accessorKey: "leadsName",
+      accessorKey: "username",
       header: "Leads Name",
-      cell: ({ row }) => <div>{row.getValue("leadsName")}</div>,
+      cell: ({ row }) => <div>{row.getValue("username")}</div>,
     },
     {
       accessorKey: "vendorName",
@@ -800,7 +800,7 @@ import { TBoard } from '@/shared/data'
 const data: Headings[] = [
   {
     id: "m5gr84i9",
-    leadsName: "John Doe (Sample)",
+    username: "John Doe (Sample)",
     vendorName: "Acme Corp",
     contactPerson: "Ronald Richards",
     email: "john@acme.com",
@@ -813,7 +813,7 @@ const data: Headings[] = [
   },
   {
     id: "3u1reuv4",
-    leadsName: "Jane Smith",
+    username: "Jane Smith",
     vendorName: "TechNova",
     contactPerson: "Lisa Ray",
     email: "Abe45@example.com",
@@ -826,7 +826,7 @@ const data: Headings[] = [
   },
   {
     id: "derv1ws0",
-    leadsName: "Tom Hanks",
+    username: "Tom Hanks",
     vendorName: "GreenWorld",
     contactPerson: "Michael Chen",
     email: "Monserrat44@example.com",
@@ -839,7 +839,7 @@ const data: Headings[] = [
   },
   {
     id: "5kma53ae",
-    leadsName: "Emma Watson",
+    username: "Emma Watson",
     vendorName: "SmartLine",
     contactPerson: "Raj Patel",
     email: "Silas22@example.com",
@@ -852,7 +852,7 @@ const data: Headings[] = [
   },
   {
     id: "bhqecj4p",
-    leadsName: "Mark Taylor",
+    username: "Mark Taylor",
     vendorName: "EcoWave",
     contactPerson: "Angela Lee",
     email: "carmella@example.com",
@@ -865,7 +865,7 @@ const data: Headings[] = [
   },
   {
     id: "m5gr84i9",
-    leadsName: "John Doe (Sample)",
+    username: "John Doe (Sample)",
     vendorName: "Acme Corp",
     contactPerson: "Ronald Richards",
     email: "john@acme.com",
@@ -878,7 +878,7 @@ const data: Headings[] = [
   },
   {
     id: "3u1reuv4",
-    leadsName: "Jane Smith",
+    username: "Jane Smith",
     vendorName: "TechNova",
     contactPerson: "Lisa Ray",
     email: "Abe45@example.com",
@@ -891,7 +891,7 @@ const data: Headings[] = [
   },
   {
     id: "derv1ws0",
-    leadsName: "Tom Hanks",
+    username: "Tom Hanks",
     vendorName: "GreenWorld",
     contactPerson: "Michael Chen",
     email: "Monserrat44@example.com",
@@ -904,7 +904,7 @@ const data: Headings[] = [
   },
   {
     id: "5kma53ae",
-    leadsName: "Emma Watson",
+    username: "Emma Watson",
     vendorName: "SmartLine",
     contactPerson: "Raj Patel",
     email: "Silas22@example.com",
@@ -917,7 +917,7 @@ const data: Headings[] = [
   },
   {
     id: "bhqecj4p",
-    leadsName: "Mark Taylor",
+    username: "Mark Taylor",
     vendorName: "EcoWave",
     contactPerson: "Angela Lee",
     email: "carmella@example.com",
@@ -930,7 +930,7 @@ const data: Headings[] = [
   },
   {
     id: "m5gr84i9",
-    leadsName: "John Doe (Sample)",
+    username: "John Doe (Sample)",
     vendorName: "Acme Corp",
     contactPerson: "Ronald Richards",
     email: "john@acme.com",
@@ -943,7 +943,7 @@ const data: Headings[] = [
   },
   {
     id: "3u1reuv4",
-    leadsName: "Jane Smith",
+    username: "Jane Smith",
     vendorName: "TechNova",
     contactPerson: "Lisa Ray",
     email: "Abe45@example.com",
@@ -956,7 +956,7 @@ const data: Headings[] = [
   },
   {
     id: "derv1ws0",
-    leadsName: "Tom Hanks",
+    username: "Tom Hanks",
     vendorName: "GreenWorld",
     contactPerson: "Michael Chen",
     email: "Monserrat44@example.com",
@@ -969,7 +969,7 @@ const data: Headings[] = [
   },
   {
     id: "5kma53ae",
-    leadsName: "Emma Watson",
+    username: "Emma Watson",
     vendorName: "SmartLine",
     contactPerson: "Raj Patel",
     email: "Silas22@example.com",
@@ -982,7 +982,7 @@ const data: Headings[] = [
   },
   {
     id: "bhqecj4p",
-    leadsName: "Mark Taylor",
+    username: "Mark Taylor",
     vendorName: "EcoWave",
     contactPerson: "Angela Lee",
     email: "carmella@example.com",
@@ -995,7 +995,7 @@ const data: Headings[] = [
   },
   {
     id: "m5gr84i9",
-    leadsName: "John Doe (Sample)",
+    username: "John Doe (Sample)",
     vendorName: "Acme Corp",
     contactPerson: "Ronald Richards",
     email: "john@acme.com",
