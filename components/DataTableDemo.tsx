@@ -18,10 +18,10 @@ import {
 
   ChevronLeft,
   ChevronRight,
-   Columns3Cog,
+  Columns3Cog,
   ChevronsLeft,
   ChevronsRight,
-  
+
   GripVertical,
   X,
 } from "lucide-react"
@@ -50,10 +50,10 @@ import TableHeaderControls from "./TableHeaderControls"
 type Props<TData> = {
   data: TData[]
   columns: ColumnDef<TData>[]
- title:string
+  title: string
 }
 
-export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
+export function DataTableDemo<TData>({ data, columns, title }: Props<TData>) {
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([])
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({})
@@ -81,8 +81,8 @@ export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
 
   return (
     <div className="w-full ">
-{title !== "Leads" && <TableHeaderControls title={title} />}
-     
+      {title !== "Leads" && <TableHeaderControls title={title} />}
+
 
       <div className="flex items-center justify-between mb-4 ">
         <div className="search-bar flex gap-2.5">
@@ -94,7 +94,7 @@ export function DataTableDemo<TData>({ data, columns,title }: Props<TData>) {
             }
             className="w-[290px]"
           />
-          
+
         </div>
         <div className="manage-columns-all-filters flex gap-2.5">
 
