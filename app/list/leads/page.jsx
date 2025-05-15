@@ -3,10 +3,8 @@ import View from '../../../components/View'
 
 const page = () => {
   return (
-    <div className="p-8">
           <View>
           </View>  
-            </div>
   )
 }
 

@@ -81,19 +81,20 @@ export function DataTableDemo<TData>({ data, columns, title }: Props<TData>) {
 
   return (
     <div className="w-full ">
-      {title !== "Leads" && <TableHeaderControls title={title} />}
+      {title !== "Leads" && title !==  "Meetings" && <TableHeaderControls title={title} />}
 
 
       <div className="flex items-center justify-between mb-4 ">
         <div className="search-bar flex gap-2.5">
           <Input
-            placeholder={`Search ${title}`}
+            placeholder={title === "Meetings" ? "Search Products" : `Search ${title}`}
             value={(table.getColumn("username")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
               table.getColumn("username")?.setFilterValue(event.target.value)
             }
             className="w-[290px]"
           />
+
 
         </div>
         <div className="manage-columns-all-filters flex gap-2.5">

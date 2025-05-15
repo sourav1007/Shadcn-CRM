@@ -1,9 +1,8 @@
-import React from 'react'
-
+import MeetingsView from "../../components/MeetingsView"
 const page = () => {
   return (
     <div>
-      This is Meetings Page
+      <MeetingsView/>
     </div>
   )
 }
