@@ -1,0 +1,139 @@
+/* calendar.css */
+
+.rbc-calendar {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Toolbar (Today, Back, Next) */
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.rbc-toolbar-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.rbc-toolbar button {
+  background-color: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  color: #1F2937;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #E2E8F0;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #2563EB;
+  color: white;
+  border-color: #2563EB;
+}
+
+/* Header (Weekday names) */
+.rbc-header {
+  background-color: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
+  border-right: 1px solid #E2E8F0;
+  text-align: center;
+  font-weight: 500;
+  color: #475569;
+  padding: 10px 4px;
+  font-size: 14px;
+}
+
+/* Date cells */
+.rbc-month-view,
+.rbc-time-view {
+  border-left: 1px solid #E2E8F0;
+  border-top: 1px solid #E2E8F0;
+}
+
+.rbc-month-row,
+.rbc-time-content {
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.rbc-date-cell {
+  padding: 4px;
+  font-size: 12px;
+  text-align: right;
+  color: #334155;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid #E2E8F0;
+}
+
+.rbc-off-range-bg {
+  background-color: #F8FAFC;
+  color: #CBD5E1;
+}
+
+/* Today cell */
+.rbc-today {
+  background-color: #ECFDF5 !important;
+  border: 1px solid #A7F3D0;
+}
+
+/* Events */
+.rbc-event {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin: 2px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.rbc-event.green {
+  background-color: #DCFCE7;
+  color: #166534;
+}
+
+.rbc-event.red {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+.rbc-event.yellow {
+  background-color: #FEF9C3;
+  color: #92400E;
+}
+
+/* More events link */
+.rbc-show-more {
+  font-size: 12px;
+  color: #2563EB;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+/* Agenda and time views (optional) */
+.rbc-agenda-view,
+.rbc-time-view {
+  font-size: 14px;
+}
+ .rbc-time-header-cell .rbc-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    padding: 15px 4px;
+    font-size: 14px;
+    font-weight: 500;
+}

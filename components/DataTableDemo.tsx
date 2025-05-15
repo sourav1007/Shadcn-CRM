@@ -94,8 +94,6 @@ export function DataTableDemo<TData>({ data, columns, title }: Props<TData>) {
             }
             className="w-[290px]"
           />
-
-
         </div>
         <div className="manage-columns-all-filters flex gap-2.5">
 

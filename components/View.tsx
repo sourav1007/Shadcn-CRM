@@ -34,9 +34,6 @@ export type Headings = {
   
   }
 
-
-
-
   export const kanbanData: TBoard = {
     columns: [
       {
@@ -674,10 +671,6 @@ export type Headings = {
     ],
   };
   
-   
-  
-  
-  
   import {
     ColumnDef,
   } from "@tanstack/react-table"
@@ -1019,10 +1012,7 @@ const View = () => {
     const [activeTab, setActiveTab] = useState("tab1");
     return (
         <> <TableHeaderControls title="Leads" activeTab={activeTab} setActiveTab={setActiveTab}></TableHeaderControls>
-
-        
-
-            <div >
+      <div >
                 {tabs.find((tab) => tab.id === activeTab)?.component}
             </div>
         </>

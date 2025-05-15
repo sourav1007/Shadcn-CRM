@@ -5,9 +5,8 @@ import TableHeaderControls from './TableHeaderControls'
 import { DataTableDemo } from "./DataTableDemo"
 import CalenderView from '../components/CalenderView' 
 
-import { ArrowUpDown, Pencil, Copy, Trash,  MoreHorizontal, } from "lucide-react"
+import { Pencil, Copy, Trash,  MoreHorizontal, } from "lucide-react"
 
-import { Progress } from "@/components/ui/progress"
 
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -25,7 +24,7 @@ export type Headings = {
   meetingTitle: string
   from: string
   to: string
-  contactName: string
+  username: string
   meetingOwner: string
   status: "Upcoming" | "Overdue" | "Completed"
   createdDate: string
@@ -39,28 +38,7 @@ export type Headings = {
 
 
 export const columns: ColumnDef<Headings>[] = [
-  {
-    id: "select",
-    header: ({ table }) => (
-      <Checkbox
-        checked={
-          table.getIsAllPageRowsSelected() ||
-          (table.getIsSomePageRowsSelected() && "indeterminate")
-        }
-        onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
-        aria-label="Select all"
-      />
-    ),
-    cell: ({ row }) => (
-      <Checkbox
-        checked={row.getIsSelected()}
-        onCheckedChange={(value) => row.toggleSelected(!!value)}
-        aria-label="Select row"
-      />
-    ),
-    enableSorting: false,
-    enableHiding: false
-  },
+  
   {
     accessorKey: "meetingTitle",
     header: "Meeting Title",
@@ -77,9 +55,9 @@ export const columns: ColumnDef<Headings>[] = [
     cell: ({ row }) => <div>{row.getValue("to")}</div>
   },
   {
-    accessorKey: "contactName",
+    accessorKey: "username",
     header: "Contact Name",
-    cell: ({ row }) => <div>{row.getValue("contactName")}</div>
+    cell: ({ row }) => <div>{row.getValue("username")}</div>
   },
   {
     accessorKey: "meetingOwner",
@@ -147,7 +125,7 @@ export const data: Headings[] = [
     meetingTitle: "Nutrition Follow-up Call",
     from: "15 Apr 2024, 11:00 AM",
     to: "15 Apr 2024, 11:30 AM",
-    contactName: "Rahul Sharma",
+    username: "Rahul Sharma",
     meetingOwner: "Riya Verma",
     status: "Completed",
     createdDate: "10 Apr 2024"
@@ -156,7 +134,7 @@ export const data: Headings[] = [
     meetingTitle: "Initial Health Assessment",
     from: "18 Apr 2024, 10:00 AM",
     to: "18 Apr 2024, 10:45 AM",
-    contactName: "Sneha Patel",
+    username: "Sneha Patel",
     meetingOwner: "Amit Joshi",
     status: "Upcoming",
     createdDate: "12 Apr 2024"
@@ -165,7 +143,7 @@ export const data: Headings[] = [
     meetingTitle: "Diet Plan Review",
     from: "20 Apr 2024, 3:00 PM",
     to: "20 Apr 2024, 3:30 PM",
-    contactName: "Ankit Mehra",
+    username: "Ankit Mehra",
     meetingOwner: "Riya Verma",
     status: "Overdue",
     createdDate: "15 Apr 2024"
@@ -174,7 +152,7 @@ export const data: Headings[] = [
     meetingTitle: "Fitness Consultation",
     from: "22 Apr 2024, 2:00 PM",
     to: "22 Apr 2024, 2:45 PM",
-    contactName: "Pooja Nair",
+    username: "Pooja Nair",
     meetingOwner: "Amit Joshi",
     status: "Upcoming",
     createdDate: "17 Apr 2024"
@@ -204,54 +182,3 @@ const MeetingsView = () => {
 }
 
 export default MeetingsView
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
